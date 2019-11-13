@@ -245,7 +245,7 @@ function tallyUpDonations(runners) {
 
   return sum;
 
-}//Pass in place to count and the array then specify what value to add.
+}//Pass in place to count and the array then specify what value
 
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
@@ -264,12 +264,13 @@ function tallyUpDonations(runners) {
  * etc
 */
 function counterMaker() {
-  // BROKEN CODE STARTS
-  const count = 0;
+ 
+  let count = -1;
   function counter() {
-    ++count
+    return count++
   }
-  // BROKEN CODE ENDS
+  return counter;
+  
 }
 
 /**
